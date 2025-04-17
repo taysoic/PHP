@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimasMod</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon"
+        href="../Projeto_Final/assets/imagem_2025-03-31_122525329-removebg-preview.png">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="../index.php"><img src="../assets/imagem_2025-03-31_122525329-removebg-preview.png"
+                    alt="SimasMod" style="width: 120px; height:90px; "></div></a>
+        <nav>
+            <a href="../index.php" class="btn">Voltar</a>
+        </nav>
+    </header>
+    <main class="auth-container">
+        <h1>Acesse sua conta</h1>
+        <form onsubmit="return verificarLogin()">
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required placeholder="@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" required placeholder="••••••••">
+                <a href="#" style="display: block; text-align: right; margin-top: 0.5rem; font-size: 0.9rem;">Esqueci
+                    minha senha</a>
+            </div>
+            <div id="errorMessage" class="error-message"></div>
+
+            <button type="submit" class="btn-primary">Entrar</button>
+
+            <div class="auth-footer">
+                <p>Não tem uma conta? <a href="register.php">Cadastre-se</a></p>
+            </div>
+        </form>
+    </main>
+    <script src="../login.js"></script>
+    
+</body>
+
+</html>
+<?php include "../footer.php"?>
